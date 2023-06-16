@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*main - Starting point
+/**
+ * main - Starting point
  * Description: 'Positive or negative'
  * Return: Always 0 (Success)
  */
