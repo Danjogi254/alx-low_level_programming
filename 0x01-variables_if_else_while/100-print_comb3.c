@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	int A = 0;
-	int B = 0;
+	int A = '0';
+	int B = '0';
 
-	for (B = 0; B <= 9; B++)
+	for (B = '0'; B <= '9'; B++)
 	{
-		for (A = 0; A <= 9; A++)
+		for (A = '0'; A <= '9'; A++)
 		{
 			if (!((A == B) || (B > A)))
 			{
