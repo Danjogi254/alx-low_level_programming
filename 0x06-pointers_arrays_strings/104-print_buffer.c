@@ -24,7 +24,10 @@ void print_buffer(char *b, int size)
 		for (d = 0; d < 10; d++)
 		{
 			if (d < c)
-				printf("%02x", *(b + a + d));
+			{
+				int decimal = *(b + a + d);
+				printf("%02x %03d", decimal, decimal);
+			}
 			else
 				printf(" ");
 			if (d % 2)
