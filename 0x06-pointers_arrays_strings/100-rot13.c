@@ -11,7 +11,7 @@ char *rot13(char *p)
 	char alp1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char alp2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (a = 0; p[a] != '\n'; a++)
+	for (a = 0; p[a] != '\0'; a++)
 	{
 		for (b = 0; b < 52; b++)
 		{
