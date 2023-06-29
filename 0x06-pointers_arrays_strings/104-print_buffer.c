@@ -20,13 +20,12 @@ void print_buffer(char *b, int size)
 	while (a < size)
 	{
 		c = size - a < 10 ? size - a : 10;
-		printf("%08x:", a);
+		printf("%08x: ", a);
 		for (d = 0; d < 10; d++)
 		{
 			if (d < c)
 			{
-				int decimal = *(b + a + d);
-				printf("%02x %03d", decimal, decimal);
+				printf("%02x", *(b + a + d));
 			}
 			else
 				printf(" ");
